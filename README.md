@@ -1,3 +1,14 @@
-Refer to `backbone-identity-map.js` for instructions on usage.
+# Identity Map for Backbone Models
+All the logic was taken from https://github.com/shinetech/backbone-identity-map.
 
-For more information, see http://blog.shinetech.com/2012/12/24/an-identity-map-for-backbone-js/
+Subscribes to the module pattern.
+Tested with [Rendr](https://github.com/rendrjs/rendr) models.
+
+Usage:
+```coffee
+Base = require('rendr/shared/base/model')
+IdentityMap = require('identity-map')
+
+IdentityMap class MyModel extends Base
+  ...
+```
